@@ -1,0 +1,66 @@
+import turtle
+
+t = turtle.Turtle()
+
+for c in ['red', 'green', 'yellow', 'blue']:
+    t.color(c)
+    t.forward(75)
+    t.left(90)
+    t.goto(20,100)   
+
+
+t.goto(0,50)   
+t.write("regulatory natural network")
+
+
+///////////////////////////////////////////////
+for c in ['red', 'green', 'yellow', 'blue']:
+    t.color(c)
+    t.forward(75)
+    t.left(90)
+
+
+t.goto(50,100)   
+t.write("design expression systems in control manner")
+
+   
+   /////////////////////////////
+   for c in ['red', 'green', 'yellow', 'blue']:
+    t.color(c)
+    t.forward(75)
+    t.left(90)
+
+
+t.goto(100,150)   
+t.write("gan algorithm")
+
+   ////////////////////////////
+   for c in ['red', 'green', 'yellow', 'blue']:
+    t.color(c)
+    t.forward(75)
+    t.left(90)
+
+
+t.goto(150,200)   
+t.write("testing results of gan")
+
+   
+   ///////////////////////////////
+   for c in ['red', 'green', 'yellow', 'blue']:
+    t.color(c)
+    t.forward(75)
+    t.left(90)
+
+
+t.goto(200,250)   
+t.write("compare result with manual mutations")
+
+   
+     for c in ['red', 'green', 'yellow', 'blue']:
+    t.color(c)
+    t.forward(75)
+    t.left(90)
+
+
+t.goto(250,300)   
+t.write("usage of regular gene ")
