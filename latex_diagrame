@@ -1,0 +1,26 @@
+\documentclass[border=10pt,tikz]{standalone}
+
+\usepackage{pgf}
+\usetikzlibrary{arrows,automata,shapes,positioning}
+\usepackage[latin1]{inputenc}
+\begin{document}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3.5cm,
+                    semithick]
+    \tikzstyle{every state}=[ellipse,fill=white,text=black]
+
+    \node[state] (Pa)                       {parents};
+    \node[state] (Pu) [above right = of Pa] {pupils};
+    \node[state] (T)  [above left = of Pa]  {teacher};
+    \node[state] (F)  [above = of Pu]       {classmates};
+    \node[state] (C)  [above = of T]        {colleagues};
+
+    \path[every node/.style={align=center}]
+        (T) edge [bend left = 20]             node {regulatory network sequence} (Pu)
+        (T) edge [bend left = 20]             node {gan algorithm}                (C)
+        (T) edge [<->, left, bend right = 20] node {testing gan results}                 (Pa)
+        (Pu) edge [right, bend right = 20]    node {compare gan results}               (F)
+        (Pu) edge [bend left = 20]            node {usages of regulare gene}               (Pa)
+        (Pu) edge [bend left = 20]            node {gan usages}     (T);
+\end{tikzpicture}
+
+\end{document}
